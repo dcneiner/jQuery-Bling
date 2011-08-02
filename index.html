@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>My Portfolio | John Neiner</title>
+	<meta name="description" content="A sample site for use during the presentation: jQuery Nuts, Bolts and Bling">
+	<meta name="author" content="Doug Neiner">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Remember, Modernizr takes care of our no-js to js class swap -->
+	<script src="js/libs/modernizr-1.7.min.js"></script>
+</head>
+
+<body>
+
+	<div id="container">
+		<header>
+			<h1>John Neiner</h1>
+			<p>Check out some of my Dribbble shots:</p>
+		</header>
+		<ul id="dribbble-shots" class="portfolio">
+		</ul>
+		<footer>
+			<p>Sample site for jQuery Nuts, Bolts and Bling. By <a href="http://twitter.com/dougneiner">Doug Neiner</a></p>
+		</footer>
+	</div> <!-- eo #container -->
+
+	<!-- Our template for each shot -->
+	<script id="shot-template" type="text/html">
+	<li>
+		<a href="${url}"><img src="${image_teaser_url}" alt="" /></a>
+		<div class="portfolio-info-panel">
+			<h2>${title}</h2>
+			<p><a href="${short_url}">${short_url}</a></p>
+		</div>
+	</li>
+	</script>
+
+	<!-- jQuery -->
+	<script src="js/libs/jquery-1.6.2.js"></script>
+	
+	<!-- Our templating library -->
+	<script src="js/libs/jquery.tmpl.js"></script>
+	
+	<!-- The doTimeout Plugin -->
+	<script src="js/libs/jquery.ba-dotimeout.js"></script>
+	
+	<!-- You should be able to remove the following three lines in production
+	     and everything should still work -->
+	
+	<script src="js/libs/jquery.mockjax.js"></script>
+	<script src="mocks/johnneiner.js"></script>
+	<script src="mocks/mocks.js"></script>
+	
+	<!-- Our primary script file -->
+	<script src="js/script.js"></script>
+</body>
+</html>

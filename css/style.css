@@ -1,0 +1,125 @@
+@import url( "base.css" );
+@import url( "../fonts/ostrich-sans-fontfacekit/stylesheet.css" );
+
+html, body { width: 100%; min-height: 100%; }
+
+html {
+	height: 100%;
+	background-color: #70300a;
+	background: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 700, from(#CB7317), color-stop(0.5, #984D10), to(#70300A));
+	background: -moz-radial-gradient(50% 0%, farthest-side, #CB7317, #984D10, #70300A);
+	background-attachment: fixed;
+}
+
+body {
+	background: transparent;
+	padding: 1px 0;
+}
+
+header {
+	text-align: center;
+	margin: 30px 0 20px 0;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+header h1 {
+	font-size: 80px;
+	font-family: "OstrichSansBlack", sans-serif;
+	color: rgb(255,191,59);
+}
+
+header p {
+	font-family: "Gill Sans", serif;
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #fff;
+}
+
+.portfolio {
+	width: 690px;
+	margin: 40px auto;
+	list-style: none;
+	padding: 0;
+	position: relative;
+	left: 10px;
+}
+
+.portfolio li {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 5px;
+	background: #fff;
+	-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.2); /* Saf3.0+, Chrome */
+	   -moz-box-shadow: 2px 2px 3px rgba(0,0,0,0.2); /* FF3.5+ */
+	        box-shadow: 2px 2px 3px rgba(0,0,0,0.2); /* Opera 10.5, IE 9.0 */
+	position: relative;
+}
+
+.portfolio li img,
+.portfolio li span.placeholder-image {
+	width: 200px;
+	height: 150px;
+	background: #3b1702;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+.portfolio-info-panel {
+	background: rgba(0,0,0,0.9);
+	position: absolute;
+	color: #fff;
+	padding: 10px;
+	width: 160px;
+	-webkit-border-radius: 5px; /* Saf3+, Chrome */
+	   -moz-border-radius: 5px; /* FF1+ */
+	        border-radius: 5px; /* Opera 10.5, IE 9 */
+	text-align: center;
+	left: 15px;
+	bottom: 140px;
+	display: none;
+}
+
+.no-js li:hover .portfolio-info-panel {
+	display: block;
+}
+
+.portfolio li:nth-child(1n+4) .portfolio-info-panel {
+	bottom: auto;
+	top: 140px;
+}
+
+.portfolio-info-panel h2 {
+	font-weight: normal;
+	font-family: "OstrichSansBlack", serif;
+	text-rendering: optimizeLegibility;
+	font-size: 24px;
+	color: rgb(255,191,59);
+}
+
+.portfolio-info-panel a {
+	color: #ccc;
+	text-decoration: none;
+}
+
+.portfolio-info-panel a:hover {
+	text-decoration: underline;
+}
+
+
+footer {
+	clear: left;
+	width: 700px;
+	border-top: solid 1px rgba(0,0,0,0.4);
+	padding-top: 30px;
+	position: relative;
+	margin: 0 auto;
+	top: 20px;
+	text-align: center;
+	color: rgba(255,255,255,0.4);
+}
+
+footer a {
+	color: #fff;
+}
